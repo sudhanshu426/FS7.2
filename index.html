@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Shop</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+            color: #333;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 30px;
+            color: #333;
+        }
+
+        h2 {
+            font-size: 1.8em;
+            margin-top: 40px;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        .products-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-bottom: 50px;
+        }
+
+        .product-card {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            width: 150px;
+            text-align: center;
+        }
+
+        .product-card h3 {
+            font-size: 1.2em;
+            margin-top: 0;
+            margin-bottom: 10px;
+            color: #555;
+        }
+
+        .product-card p {
+            font-size: 1.1em;
+            color: #777;
+            margin-bottom: 15px;
+        }
+
+        .product-card button {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 8px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 0.9em;
+        }
+
+        .product-card button:hover {
+            background-color: #0056b3;
+        }
+
+        .cart-item {
+            display: flex;
+            align-items: center;
+            justify-content: center; /* Center horizontally */
+            margin-bottom: 15px;
+            width: 100%; /* Take full width of its container */
+        }
+
+        .cart-item-details {
+            font-size: 1.1em;
+            margin-right: 10px;
+            text-align: right; /* Align text to the right for item details */
+        }
+
+        .cart-item input[type="text"] {
+            width: 40px;
+            padding: 5px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            text-align: center;
+            margin-right: 10px;
+        }
+
+        .cart-item button {
+            background-color: #dc3545;
+            color: white;
+            border: none;
+            padding: 5px 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 0.9em;
+        }
+
+        .cart-item button:hover {
+            background-color: #c82333;
+        }
+    </style>
+</head>
+<body>
+    <h1>My Shop</h1>
+
+    <h2>Products</h2>
+    <div class="products-container">
+        <div class="product-card">
+            <h3>Laptop</h3>
+            <p>$1200</p>
+            <button>Add to Cart</button>
+        </div>
+        <div class="product-card">
+            <h3>Mouse</h3>
+            <p>$25</p>
+            <button>Add to Cart</button>
+        </div>
+        <div class="product-card">
+            <h3>Keyboard</h3>
+            <p>$45</p>
+            <button>Add to Cart</button>
+        </div>
+    </div>
+
+    <h2>Shopping Cart</h2>
+    <div class="shopping-cart-items-container">
+        <div class="cart-item">
+            <span class="cart-item-details">Laptop ($1200)</span>
+            <input type="text" value="1">
+            <button>Remove</button>
+        </div>
+        <div class="cart-item">
+            <span class="cart-item-details">Mouse ($25)</span>
+            <input type="text" value="1">
+            <button>Remove</button>
+        </div>
+    </div>
+
+</body>
+</html>
